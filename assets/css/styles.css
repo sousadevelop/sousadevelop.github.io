@@ -67,3 +67,13 @@ form {
 
 form label {
     margin: 10px 0 5px;
+}
+
+.article {
+    margin-bottom: 30px;
+}
+
+.article iframe {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
