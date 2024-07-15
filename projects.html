@@ -2,25 +2,45 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="assets/img/planta-tech.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos - Meu Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Projetos — João Victor S.S.</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/img/LogoMakr.png" alt="logo" height="60px">
+            </div>
+            <ul class="links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projetos</a></li>
                 <li><a href="articles.html">Artigos</a></li>
+                <li><a href="projects.html">Projetos</a></li>
                 <li><a href="videos.html">Vídeos</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <!--<li><a href="contact.html">Contato</a></li>-->
             </ul>
+
+            <a href="#" class="action_btn">Currículo</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Artigos</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <!--<li><a href="contact.html">Contato</a></li>-->
+                <li><a href="#" class="action_btn">Currículo</a></li>
+            </div>
         </nav>
     </header>
+
     <main>
         <section class="projects">
-            <h1>Meus Projetos</h1>
+            <h1>Meus Projetos <span style="color: orange;">— Em construção...</span></h1>
             <!-- Adicione seus projetos aqui -->
             <div class="project">
                 <h2>Projeto 1</h2>
@@ -33,15 +53,54 @@
         </section>
     </main>
     
-    <div style="right: 0px; border: 0px none; height: 500px; position: fixed; width: 300px; overflow: hidden; bottom: -67px;">
-        <div style="overflow: hidden;"></div>
-        
-        <iframe height="430" width="350" src="https://bot.dialogflow.com/0c34469a-fa8e-4971-9ea9-d80b95f97a2d"></iframe>
-        
-    </div>
+    <script type="text/javascript"
+        id="botcopy-embedder-d7lcfheammjct"
+        class="botcopy-embedder-d7lcfheammjct" 
+        data-botId="6694101d815fe70009333709"
+    >
+        var s = document.createElement('script'); 
+        s.type = 'text/javascript'; s.async = true; 
+        s.src = 'https://widget.botcopy.com/js/injection.js'; 
+        document.getElementById('botcopy-embedder-d7lcfheammjct').appendChild(s);
+    </script>
 
     <footer>
-        <p>&copy; 2024 João Victor</p>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/joãovictorsousa/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/sousadevelop"><i class="fa-brands fa-github"></i></a>
+                <a href="https://medium.com/@joao.victtor"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://www.youtube.com/@VeritasSec"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.behance.net/joaovictorss"><i class="fa-brands fa-behance"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articles.html">Artigos</a></li>
+                    <li><a href="projects.html">Projetos</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                    <!--<li><a href="contact.html">Contato</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>&copy; 2024 João Victor S.S.</p>
+        </div>
     </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
+        };
+    </script>
 </body>
 </html>

@@ -2,43 +2,90 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="assets/img/planta-tech.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artigos - Meu Portfólio</title>
+    <title>Artigos - João Victor S.S.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/img/LogoMakr.png" alt="logo" height="60px">
+            </div>
+            <ul class="links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projetos</a></li>
                 <li><a href="articles.html">Artigos</a></li>
+                <li><a href="projects.html">Projetos</a></li>
                 <li><a href="videos.html">Vídeos</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <!--<li><a href="contact.html">Contato</a></li>-->
             </ul>
+            <a href="#" class="action_btn">Currículo</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Artigos</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <!--<li><a href="contact.html">Contato</a></li>-->
+                <li><a href="#" class="action_btn">Currículo</a></li>
+            </div>
         </nav>
     </header>
     <main>
         <section class="articles">
-            <h1>Meus Artigos</h1>
-            <!-- Adicione seus artigos aqui como iframes -->
-            <div class="article">
-                <h2>Artigo 1</h2>
-                <iframe src="https://medium.com/@joao.victtor/qual-a-relev%C3%A2ncia-em-monitorar-aplica%C3%A7%C3%B5es-e-infraestrutura-839d3b06b285" width="100%" height="500px" frameborder="0"></iframe>
+            <h1>Artigos</h1>
+            <div class="article-container">
+                <h2>Exemplo de Artigo Incorporado</h2>
+                <iframe src="URL_DO_ARTIGO" width="100%" height="600px" frameborder="0" style="border: 1px solid #ccc;"></iframe>
             </div>
-            <div class="article">
-                <h2>Artigo 2</h2>
-                <iframe src="https://medium.com/@joao.victtor/kubernetes-1659e93ac9f4" width="100%" height="500px" frameborder="0"></iframe>
-            </div>
-            <div class="article">
-                <h2>Artigo 2</h2>
-                <iframe src="https://medium.com/@joao.victtor/kubernetes-a-volta-dos-que-n%C3%A3o-foram-105704fc3862" width="100%" height="500px" frameborder="0"></iframe>
-            </div>
-            <!-- Adicione mais iframes conforme necessário -->
         </section>
     </main>
+
+    <script type="text/javascript"
+        id="botcopy-embedder-d7lcfheammjct"
+        class="botcopy-embedder-d7lcfheammjct" 
+        data-botId="6694101d815fe70009333709"
+    >
+        var s = document.createElement('script'); 
+        s.type = 'text/javascript'; s.async = true; 
+        s.src = 'https://widget.botcopy.com/js/injection.js'; 
+        document.getElementById('botcopy-embedder-d7lcfheammjct').appendChild(s);
+    </script>
+
     <footer>
-        <p>&copy; 2024 João Victor</p>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/joãovictorsousa/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/sousadevelop"><i class="fa-brands fa-github"></i></a>
+                <a href="https://medium.com/@joao.victtor"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://www.youtube.com/@VeritasSec"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.behance.net/joaovictorss"><i class="fa-brands fa-behance"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="articles.html">Artigos</a></li>
+                    <li><a href="projects.html">Projetos</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                    <!--<li><a href="contact.html">Contato</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>&copy; 2024 João Victor S.S.</p>
+        </div>
     </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const dropdownMenu = document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick = function() {
+            dropdownMenu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

@@ -2,22 +2,41 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/assets/img/hacker-sem-fundo.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Meu Portfólio</title>
+    <title>João Victor S.S. — Developer | Pentester | DevOps</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/index.html">João Victor S.S.</a>
+            </div>
+            <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projetos</a></li>
                 <li><a href="articles.html">Artigos</a></li>
                 <li><a href="videos.html">Vídeos</a></li>
                 <li><a href="contact.html">Contato</a></li>
             </ul>
+
+            <a href="#" class="action_btn">Currículo</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="articles.html">Artigos</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="#" class="action_btn">Currículo</a></li>
+            </div>
         </nav>
     </header>
+
     <main>
         <section class="contact">
             <h1>Contato</h1>
@@ -39,12 +58,52 @@
     <div style="right: 0px; border: 0px none; height: 500px; position: fixed; width: 300px; overflow: hidden; bottom: -67px;">
         <div style="overflow: hidden;"></div>
         
-        <iframe height="430" width="350" src="https://bot.dialogflow.com/0c34469a-fa8e-4971-9ea9-d80b95f97a2d"></iframe>
+        <iframe
+            allow="microphone;"
+            width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/0c34469a-fa8e-4971-9ea9-d80b95f97a2d">
+        </iframe>
         
     </div>
 
     <footer>
-        <p>&copy; 2024 João Victor</p>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/joãovictorsousa/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/sousadevelop"><i class="fa-brands fa-github"></i></a>
+                <a href="https://medium.com/@joao.victtor"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://www.youtube.com/@VeritasSec"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.behance.net/joaovictorss"><i class="fa-brands fa-behance"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projetos</a></li>
+                    <li><a href="articles.html">Artigos</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Created by <span class="designer">João Victor S.S.</span></p>
+        </div>
     </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
 </body>
 </html>
