@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Projetos — João Victor S.S.</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles_project.css">
 </head>
 <body>
     <header>
@@ -22,7 +22,7 @@
                 <!--<li><a href="contact.html">Contato</a></li>-->
             </ul>
 
-            <a href="#" class="action_btn">Currículo</a>
+            <a href="curriculo.html" class="action_btn" target="_blank">Currículo</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -33,23 +33,117 @@
                 <li><a href="projects.html">Projetos</a></li>
                 <li><a href="videos.html">Vídeos</a></li>
                 <!--<li><a href="contact.html">Contato</a></li>-->
-                <li><a href="#" class="action_btn">Currículo</a></li>
+                <li><a href="curriculo.html" class="action_btn" target="_blank">Currículo</a></li>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="projects">
-            <h1>Meus Projetos <span style="color: orange;">— Em construção...</span></h1>
+
+            <h1 style="font-size: 36px; margin-bottom: 10px;"> Meus Projetos </h1>
             <!-- Adicione seus projetos aqui -->
-            <div class="project">
-                <h2>Projeto 1</h2>
-                <p>Descrição do projeto 1.</p>
+    
+            <div class="project-container">
+                <div class="project-details">
+                    <h1>OffensivePython</h1>
+                    <p>Toolkit de ferramentas para segurança ofensiva criadas em python para agilizar o processo de Pentest. Tanto com opções em interface gráfica para brincar 
+                        como versões em script para testes dentro de servidores.
+                    </p>
+                    <div class="buttons">
+                        <a href="#">Estudo de caso</a>
+                        <a href="#">Demonstração ao vivo</a>
+                        <a href="https://github.com/sousadevelop/OffensivePython" target="_blank" style="background-color: #333;"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-video">
+                    <img src="./assets/img/projetos/offsec/_2954017b-5fb7-447a-a54b-3684948ff9d8.jpeg" alt="Toolkit de Segurança">
+                    <!--<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>-->
+                </div>
             </div>
-            <div class="project">
-                <h2>Projeto 2</h2>
-                <p>Descrição do projeto 2.</p>
+
+            <br><br>
+
+            <div class="project-container">
+                <div class="project-details">
+                    <h1>WebServer</h1>
+                    <p>Servidor Web criado em python com suporte para métodos HTTP, GET e POST. Além de ter capacidade de servir arquivos de um diretório especificado. 
+                        E, respostas com diferentes códigos de status HTTP. Visando ser um servidor simples, mas bem fundamentado para uso pessoal.
+                    </p>
+                    <div class="buttons">
+                        <a href="#">Estudo de caso</a>
+                        <a href="#">Demonstração ao vivo</a>
+                        <a href="https://github.com/sousadevelop/web_server" target="_blank" style="background-color: #333;"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-video">
+                    <img src="./assets/img/projetos/webserver/webserver.jpeg" alt="Servidor web">
+                     <!--<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>-->
+                </div>
             </div>
+
+            <br><br>
+
+            <div class="project-container">
+                <div class="project-details">
+                    <h1>GraphAuto</h1>
+                    <p>Toolkit de ferramentas para suporte de máquinas em diversos sistemas operacionais. 
+                        Criadas pensando nos usuários, elas tem um arquivo executável com interface gráfica para facilitar o uso de quem não tem 
+                        conhecimento técnico, mas precisa automatizar ações diárias, ou agiliar elas.
+                    </p>
+                    <div class="buttons">
+                        <a href="#">Estudo de caso</a>
+                        <a href="#">Demonstração ao vivo</a>
+                        <a href="https://github.com/sousadevelop/GraphAuto" target="_blank" style="background-color: #333;"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-video">
+                    <img src="./assets/img/projetos/graphauto/graphauto.jpeg" alt="Ferramentas de suporte com interface gráfica">
+                     <!--<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>-->
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="project-container">
+                <div class="project-details">
+                    <h1>BOT Discord</h1>
+                    <p>Bot para uso no Discord, feito em Node.js.
+                        O seu objetivo é servir como assistente para grupos com uma implementação simples de funções que possam agilizar o trabalho
+                        e descontração das pessoas.
+                    </p>
+                    <div class="buttons">
+                        <a href="#">Estudo de caso</a>
+                        <a href="#">Demonstração ao vivo</a>
+                        <a href="https://github.com/sousadevelop/Bot-Discord.js" target="_blank" style="background-color: #333;"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-video">
+                    <img src="./assets/img/projetos/bots/bot-discord.jpeg" alt="Bot para o Discord">
+                     <!--<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>-->
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="project-container">
+                <div class="project-details">
+                    <h1>To Do List — Web</h1>
+                    <p>Com um gerenciador de tarefas web você pode personalizar o estilo que desejar, adiantando o trabalho de criar a infraestrutura e escopo.
+                        Caso queira deixar ele permanente na web pode criar uma página de acesso e subir em uma VPS. Permitindo maior versatilidade e controle de suas tarefas.
+                    </p>
+                    <div class="buttons">
+                        <a href="#">Estudo de caso</a>
+                        <a href="#">Demonstração ao vivo</a>
+                        <a href="https://github.com/sousadevelop/ToDo-List_FullStack_in_Web" target="_blank" style="background-color: #333;"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-video">
+                    <img src="./assets/img/projetos/to-do-list/to-do-list.png" alt="Ferramenta de controle de tarefas via web">
+                     <!--<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>-->
+                </div>
+            </div>
+
         </section>
     </main>
     
